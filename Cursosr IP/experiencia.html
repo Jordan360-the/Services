@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiencia | S.E.D.</title>
+    <link rel="stylesheet" href="Styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <div class="logo-nav">
+                <img src="Imj/iCono/ICONO.png" alt="S.E.D Logo" class="logo-img">
+                <nav class="nav">
+                    <a href="S.E.D.html" class="nav-link">Inicio</a>
+                    <a href="coleccion.html" class="nav-link">Colección</a>
+                    <a href="experiencia.html" class="nav-link">Experiencia</a>
+                    <a href="about us.html" class="nav-link">Nosotros</a>
+                    <a href="search.html" class="nav-link search-link">Buscar...</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sidebar de Búsqueda -->
+    <div id="search-sidebar" class="search-sidebar">
+        <div class="search-content">
+            <button class="close-search" onclick="closeSearch()">×</button>
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Buscar en S.E.D..." class="search-input">
+                <button class="search-button" onclick="performSearch()">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+            <div class="recent-searches">
+                <h3>Búsquedas recientes</h3>
+                <div class="search-tags">
+                    <span class="tag">Bodas</span>
+                    <span class="tag">Eventos Corporativos</span>
+                    <span class="tag">Decoración Floral</span>
+                </div>
+            </div>
+            <div id="searchResults" class="search-results">
+                <!-- Los resultados se mostrarán aquí -->
+            </div>
+        </div>
+    </div>
+
+    <main class="experience-main">
+        <section id="tendencias" class="experience-section">
+            <h2>Tendencias 2024</h2>
+            <div class="trends-grid">
+                <div class="trend-card">
+                    <img src="Imj/paleta.jpg" alt="Tendencia 1">
+                    <h3>Paleta de Colores</h3>
+                    <p>Descubre las combinaciones de colores que marcarán tendencia este año</p>
+                </div>
+                <div class="trend-card">
+                    <img src="Experiencias/sensorial.jpg" alt="Tendencia 2">
+                    <h3>Experiencias Sensoriales</h3>
+                    <p>Decoración que estimula todos los sentidos</p>
+                </div>
+                <div class="trend-card">
+                    <img src="Experiencias/eco.jpg" alt="Tendencia 3">
+                    <h3>Sostenibilidad</h3>
+                    <p>Decoración eco-friendly y consciente</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="proyectos" class="experience-section">
+            <h2>Proyectos Destacados</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="Imj/sueño.jpg" alt="Proyecto 1">
+                    <h3>Boda de Ensueño</h3>
+                    <p>Transformación completa de un espacio para una boda de lujo</p>
+                </div>
+                <div class="project-card">
+                    <img src="Imj/corporativo.jpg" alt="Proyecto 2">
+                    <h3>Evento Corporativo</h3>
+                    <p>Diseño innovador para un lanzamiento de producto</p>
+                </div>
+                <div class="project-card">
+                    <img src="Imj/2024.jpg" alt="Proyecto 3">
+                    <h3>Fiesta Temática</h3>
+                    <p>Creación de un mundo mágico para una celebración especial</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonios" class="experience-section">
+            <h2>Testimonios</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Increíble trabajo y atención al detalle. Superaron todas nuestras expectativas."</p>
+                        <div class="testimonial-author">
+                            <img src="iconos/cliente 1.jpg" alt="Cliente 1">
+                            <div>
+                                <h4>María González</h4>
+                                <p>Boda</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Profesionalismo y creatividad excepcionales. Nuestro evento fue un éxito gracias a S.E.D."</p>
+                        <div class="testimonial-author">
+                            <img src="iconos/cliente 1.jpg" alt="Cliente 2">
+                            <div>
+                                <h4>Carlos Rodríguez</h4>
+                                <p>Evento Corporativo</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Transformaron nuestro espacio en algo mágico. ¡Altamente recomendados!"</p>
+                        <div class="testimonial-author">
+                            <img src="iconos/cliente 1.jpg" alt="Cliente 3">
+                            <div>
+                                <h4>Laura Martínez</h4>
+                                <p>Fiesta de Cumpleaños</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>S.E.D</h3>
+                <p>Transformamos espacios en experiencias inolvidables desde 2021</p>
+            </div>
+            <div class="footer-section">
+                <h3>Síguenos</h3>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/service.e.d?igsh=ZzZ3NmQ3emlidTFx" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://web.facebook.com/profile.php?id=61572442831216" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.tiktok.com/@s.e.d.decorations0" target="_blank"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 S.E.D. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/search.js"></script>
+    <script src="js/experience.js"></script>
+</body>
+</html> 

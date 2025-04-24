@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colección | S.E.D.</title>
+    <link rel="stylesheet" href="Styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <div class="logo-nav">
+                <img src="Imj/iCono/ICONO.png" alt="S.E.D Logo" class="logo-img">
+                <nav class="nav">
+                    <a href="S.E.D.html" class="nav-link">Inicio</a>
+                    <a href="coleccion.html" class="nav-link">Colección</a>
+                    <a href="experiencia.html" class="nav-link">Experiencia</a>
+                    <a href="about us.html" class="nav-link">Nosotros</a>
+                    <a href="search.html" class="nav-link search-link">Buscar...</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- Sidebar de Búsqueda -->
+    <div id="search-sidebar" class="search-sidebar">
+        <div class="search-content">
+            <button class="close-search" onclick="closeSearch()">×</button>
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Buscar en S.E.D..." class="search-input">
+                <button class="search-button" onclick="performSearch()">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+            <div class="recent-searches">
+                <h3>Búsquedas recientes</h3>
+                <div class="search-tags">
+                    <span class="tag">Bodas</span>
+                    <span class="tag">Eventos Corporativos</span>
+                    <span class="tag">Decoración Floral</span>
+                </div>
+            </div>
+            <div id="searchResults" class="search-results">
+                <!-- Los resultados se mostrarán aquí -->
+            </div>
+        </div>
+    </div>
+
+    <main class="collection-main">
+        <aside class="collection-sidebar">
+            <h3>Tipos de Eventos</h3>
+            <ul>
+                <li><a href="#bodas">Bodas</a></li>
+                <li><a href="#cumpleanos">Cumpleaños</a></li>
+                <li><a href="#corporativos">Eventos Corporativos</a></li>
+                <li><a href="#sociales">Eventos Sociales</a></li>
+            </ul>
+        </aside>
+
+        <section class="collection-content">
+            <section id="bodas" class="collection-section">
+                <h2>Bodas</h2>
+                <div class="collection-grid">
+                    <div class="collection-item">
+                        <img src="Coleccion/clasica.jpg" alt="Boda Clásica">
+                        <h3>Boda Clásica</h3>
+                        <p>Elegancia y tradición en cada detalle</p>
+                    </div>
+                    <div class="collection-item">
+                        <img src="Coleccion/moderna.jpg" alt="Boda Moderna">
+                        <h3>Boda Moderna</h3>
+                        <p>Diseño contemporáneo y minimalista</p>
+                    </div>
+                    <div class="collection-item">
+                        <img src="Coleccion/rustica.jpg" alt="Boda Rústica">
+                        <h3>Boda Rústica</h3>
+                        <p>Encanto natural y acogedor</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="cumpleanos" class="collection-section">
+                <h2>Cumpleaños</h2>
+                <div class="collection-grid">
+                    <div class="collection-item">
+                        <img src="Coleccion/infantil.jpg" alt="Cumpleaños Infantil">
+                        <h3>Cumpleaños Infantil</h3>
+                        <p>Magia y diversión para los más pequeños</p>
+                    </div>
+                    <div class="collection-item">
+                        <img src="Coleccion/adulto.jpg" alt="Cumpleaños Adulto">
+                        <h3>Cumpleaños Adulto</h3>
+                        <p>Celebración elegante y sofisticada</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="corporativos" class="collection-section">
+                <h2>Eventos Corporativos</h2>
+                <div class="collection-grid">
+                    <div class="collection-item">
+                        <img src="Coleccion/conferencia.jpg" alt="Conferencias">
+                        <h3>Conferencias</h3>
+                        <p>Ambiente profesional y moderno</p>
+                    </div>
+                    <div class="collection-item">
+                        <img src="Coleccion/lanzamiento.jpg" alt="Lanzamientos">
+                        <h3>Lanzamientos</h3>
+                        <p>Impacto visual y memorable</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="sociales" class="collection-section">
+                <h2>Eventos Sociales</h2>
+                <div class="collection-grid">
+                    <div class="collection-item">
+                        <img src="Coleccion/tematica.jpg" alt="Fiestas Temáticas">
+                        <h3>Fiestas Temáticas</h3>
+                        <p>Creatividad y diversión</p>
+                    </div>
+                    <div class="collection-item">
+                        <img src="Coleccion/celebracion.jpg" alt="Celebraciones">
+                        <h3>Celebraciones</h3>
+                        <p>Momentos especiales, decoración única</p>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>S.E.D</h3>
+                <p>Transformamos espacios en experiencias inolvidables desde 2021</p>
+            </div>
+            <div class="footer-section">
+                <h3>Síguenos</h3>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/service.e.d?igsh=ZzZ3NmQ3emlidTFx" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://web.facebook.com/profile.php?id=61572442831216" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.tiktok.com/@s.e.d.decorations0" target="_blank"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 S.E.D. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/search.js"></script>
+    <script src="js/collection.js"></script>
+</body>
+</html> 

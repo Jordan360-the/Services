@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nosotros | S.E.D.</title>
+    <link rel="stylesheet" href="Styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <div class="logo-nav">
+                <img src="Imj/iCono/ICONO.png" alt="S.E.D Logo" class="logo-img">
+                <nav class="nav">
+                    <a href="S.E.D.html" class="nav-link">Inicio</a>
+                    <a href="coleccion.html" class="nav-link">Colección</a>
+                    <a href="experiencia.html" class="nav-link">Experiencia</a>
+                    <a href="about us.html" class="nav-link">Nosotros</a>
+                    <a href="search.html" class="nav-link search-link">Buscar...</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- Sidebar de Búsqueda -->
+    <div id="search-sidebar" class="search-sidebar">
+        <div class="search-content">
+            <button class="close-search" onclick="closeSearch()">×</button>
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Buscar en S.E.D..." class="search-input">
+                <button class="search-button" onclick="performSearch()">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+            <div class="recent-searches">
+                <h3>Búsquedas recientes</h3>
+                <div class="search-tags">
+                    <span class="tag">Bodas</span>
+                    <span class="tag">Eventos Corporativos</span>
+                    <span class="tag">Decoración Floral</span>
+                </div>
+            </div>
+            <div id="searchResults" class="search-results">
+                <!-- Los resultados se mostrarán aquí -->
+            </div>
+        </div>
+    </div>
+
+    <main class="about-main">
+        <section id="historia" class="about-section">
+            <h2>Nuestra Historia</h2>
+            <div class="history-content">
+                <div class="history-text">
+                    <p>Fundada en 2021, S.E.D. nació de la pasión por crear experiencias únicas a través de la decoración de eventos. Lo que comenzó como un pequeño proyecto se ha convertido en una empresa líder en el sector, reconocida por su creatividad y atención al detalle.</p>
+                    <p>A lo largo de los años, hemos tenido el privilegio de ser parte de momentos especiales en la vida de nuestros clientes, desde bodas íntimas hasta grandes eventos corporativos.</p>
+                </div>
+                <div class="history-image">
+                    <img src="Imj/de4a69b9ef9d5439ea04ec5e485180ce.jpg" alt="Nuestra Historia">
+                </div>
+            </div>
+        </section>
+
+        <section id="mision" class="about-section">
+            <h2>Misión y Valores</h2>
+            <div class="mission-content">
+                <div class="mission-card">
+                    <i class="fas fa-bullseye"></i>
+                    <h3>Misión</h3>
+                    <p>Transformar espacios en experiencias inolvidables a través de la decoración creativa y personalizada, superando las expectativas de nuestros clientes en cada evento.</p>
+                </div>
+                <div class="values-grid">
+                    <div class="value-card">
+                        <i class="fas fa-heart"></i>
+                        <h4>Pasión</h4>
+                        <p>Amamos lo que hacemos y lo reflejamos en cada detalle</p>
+                    </div>
+                    <div class="value-card">
+                        <i class="fas fa-lightbulb"></i>
+                        <h4>Creatividad</h4>
+                        <p>Innovamos constantemente para ofrecer diseños únicos</p>
+                    </div>
+                    <div class="value-card">
+                        <i class="fas fa-handshake"></i>
+                        <h4>Compromiso</h4>
+                        <p>Nos comprometemos con la excelencia en cada proyecto</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="equipo" class="about-section">
+            <h2>Nuestro Equipo</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <img src="Fotos/Miguel.jpg" alt="Miembro del Equipo 1">
+                    <h3>Miguel Moncion</h3>
+                    <p>Director Creativo</p>
+                </div>
+                <div class="team-member">
+                    <img src="Imj/team3.jpg" alt="Miembro del Equipo 2">
+                    <h3>Carlos Hernandez</h3>
+                    <p>Diseñador Principal</p>
+                </div>
+                <div class="team-member">
+                    <img src="Fotos/Rafael.jpg" alt="Miembro del Equipo 3">
+                    <h3>Rafael Hernandez</h3>
+                    <p>Coordinador de Eventos</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="about-section">
+            <h2>Contacto</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="qr-space">
+                        <img src="iconos/QR.jpg" alt="QR Code">
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <p>+1 (829) 217-9788</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>service.e.d.decorations@gmail.com</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Av Tamboril, Santiago de los Caballeros, República Dominicana</p>
+                    </div>
+                </div>
+                <form class="contact-form" action="https://formspree.io/f/mqapynpd" method="POST">
+                    <input type="text" name="name" placeholder="Nombre" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <textarea name="message" placeholder="Mensaje" required></textarea>
+                    <button type="submit" class="submit-btn">Enviar Mensaje</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>S.E.D</h3>
+                <p>Transformamos espacios en experiencias inolvidables desde 2021</p>
+            </div>
+            <div class="footer-section">
+                <h3>Síguenos</h3>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/service.e.d?igsh=ZzZ3NmQ3emlidTFx" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://web.facebook.com/profile.php?id=61572442831216" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.tiktok.com/@s.e.d.decorations0" target="_blank"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 S.E.D. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/search.js"></script>
+    <script src="js/about.js"></script>
+</body>
+</html> 
