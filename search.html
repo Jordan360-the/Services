@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscar | S.E.D.</title>
+    <link rel="stylesheet" href="Styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <div class="logo-nav">
+                <img src="Imj/iCono/ICONO.png" alt="S.E.D Logo" class="logo-img">
+                <nav class="nav">
+                    <a href="S.E.D.html" class="nav-link">Inicio</a>
+                    <a href="coleccion.html" class="nav-link">Colección</a>
+                    <a href="experiencia.html" class="nav-link">Experiencia</a>
+                    <a href="about us.html" class="nav-link">Nosotros</a>
+                    <a href="search.html" class="nav-link search-link">Buscar...</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main class="search-page">
+        <div class="search-page-content">
+            <h1>¿Qué estás buscando?</h1>
+            <div class="search-page-container">
+                <input type="text" id="search-page-input" class="search-page-input" placeholder="Buscar en S.E.D...">
+                <button class="search-page-button" onclick="performSearch()">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+            <div id="search-page-results" class="search-page-results"></div>
+            <div id="search-page-recent" class="search-page-recent"></div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>S.E.D</h3>
+                <p>Transformamos espacios en experiencias inolvidables desde 2021</p>
+            </div>
+            <div class="footer-section">
+                <h3>Síguenos</h3>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/service.e.d?igsh=ZzZ3NmQ3emlidTFx" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://web.facebook.com/profile.php?id=61572442831216" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.tiktok.com/@s.e.d.decorations0" target="_blank"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 S.E.D. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/search.js"></script>
+</body>
+</html>
